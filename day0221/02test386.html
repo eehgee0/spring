@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01test386</title>
+    <style>
+        *{
+         font-size: 20pt;   
+        }
+
+    </style>
+    <script>
+  
+    var info='', message='', result=''; //전역변수
+
+    var str = 'lgYc CITY kim HI';
+    document.write(str.toLowerCase() , '<br>');
+    document.write(str.toUpperCase() , '<br>');
+    document.write( '<br>' );
+
+    var msg='서울 구로구 서울 하이미디어 서울화이팅';
+    //문제1 replaceAll(구,신) 서울 글자 seoul영어 변경
+    document.write(msg.replace('서울', 'seoul') , '<br>');
+    document.write(msg.replaceAll('서울', 'seoul') , '<br>');
+
+    var eunju = "930318-2065913";
+    //문제2 charAt(숫자) 남자인지, 여자인지
+    var gender = eunju.charAt(7);
+    if(gender=='1' || gender=='3'){ info='남자입니다';}
+    else if(gender=='2' || gender=='4'){ info='여자입니다';}
+    else{info='성별기입 오류입니다';}
+    document.write(info , '<br>');
+    
+    //문제3 substring(시작,끝) 권장substr(시작,끝)
+    //당신의 생일 07월 29일입니다
+    var a = eunju.substr(2,2)
+    var b = eunju.substr(4,2)
+
+    document.write('당신의 생일은 ' + a + '월 ' + b + '일');
+
+    var c = eunju.substring(2,3);
+    var d = eunju.substring(4,5);
+    document.write('당신의 생일은 ' + c + '월 ' + d + '일');
+
+    //문제4 문자열길이 length
+    var eunju1="897346"; //6자릿수
+    var eunju2="1065913"; //7자릿수
+    var eunju3="930318-2065913"; //13자릿수체크
+    var size1=0, size2=0, size3=0;
+    size1 = eunju1.length;
+    size2 = eunju2.length;
+    if(size1!= 6 ){info='주민앞번호 잘못되었습니다';
+    document.write(info , '<br>');
+    }
+    if(size2 !=7){info='주민앞번호 잘못되었습니다';
+    document.write(info , '<br>')
+    ;}
+
+
+
+
+    //document.write(  , '<br>');
+        
+    </script>
+</head>
+<body>
+    
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01test386</title>
+    <style>
+        *{
+         font-size: 20pt;   
+        }
+
+    </style>
+    <script>
+         <!-- 386page 문자열-->
+    // charAt()
+    var str = 'abcCITYkimHI';
+    document.write(str.charAt(0),'<br>'); 
+     
+    // indexOf()
+    var str = 'abcCITYkimHI';
+    document.write(str.indexOf('a'),'<br>');
+    document.write(str.indexOf('k'),'<br>');
+
+    //lastIndexOf()
+    var str = 'abcCITYkimHI';
+    document.write(str.lastIndexOf('a'),'<br>');
+
+    //includes()
+    var str = 'abcCITYkimHI';
+    document.write(str.includes('script'),'<br>');
+    
+    //substring()
+    var str = 'http://icoxpublish.com';
+    document.write(str.substring(0,4),'<br>');
+    document.write(str.substring(7),'<br>');
+
+    //substr()
+    var str =  'http://icoxpublish.com';
+    document.write(str.substr(7,4),'<br>');
+
+    //split()
+    var str = 'abcCITYkimHI';
+    var division = str.split('_');
+    document.write(division[0] + ', '+ division[1],'<br>');
+    
+    //replace()
+    var str = 'abcCITYkimHI';
+    document.write(str.replace('out', 'over'),'<br>');
+    
+    //concat()
+    var str1 = 'abcCITYkimHI';
+    var str2 = 'abcCITYkimHI';
+    document.write(str1.concat(str2),'<br>');
+
+    //trim()
+    var str = 'abcCITYkimHI';
+    document.write(str.trim(),'<br>');
+
+
+    // toLowerCase(), toUpperCase()
+    var str = 'abcCITYkimHI';
+    document.write(str.toLowerCase() , '<br>');
+    var str = 'abcCITYkimHI';
+    document.write(str.toUpperCase() , '<br>');
+
+    </script>
+</head>
+<body>
+    
+   
+
+
+
+</body>
+</html>
